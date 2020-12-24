@@ -1,0 +1,102 @@
+#Convert the 0 into a number so we can add scores
+score = 0
+score = int(score)
+
+#Ask user for their name
+name = input("What is your name?")
+name = name.title()
+print("""Hello {}, welcome to Quiz night! 
+You will be presented with 5 questions.
+Enter the appropriate number to answer the question
+Good luck!""".format(name))
+
+#Question1
+print("""What is the maximum possible length of an identifier??
+1. 16
+2. 32 
+3. 64 
+4. none of these""")
+
+answer1 = "4"
+response1 = input("Your answer is:")
+
+if (response1 != answer1):
+    print("Sorry, that is incorrect!")
+else:
+    print("Well done! " + response1 + " is correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 5")
+
+#Question2
+print("""Who developed the Python language?
+1. Zim den 
+2. Guido van rossum 
+3. Niene Stom
+4. Wick van Rossum""")
+
+answer2 = "2"
+response2 = input("Your answer is:")
+
+if (response2 != answer2):
+    print("Sorry, that is incorrect!")
+else:
+    print("Well done! " + response2 + " is correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 5")
+
+#Question3
+print("""In which year was the Python language developed?
+1. 1989 
+2. 1972
+3. 1981
+4. 1995""")
+
+answer3 = "1"
+response3 = input("Your answer is:")
+
+if (response3 != answer3):
+    print("Sorry, that is incorrect!")
+else:
+    print("Well done! " + response3 + " is correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 5")
+
+#Question4
+print("""In which language is Python written?
+1. English
+2. PHP
+3. C
+4. all the above""")
+
+answer4 = "3"
+response4 = input("Your answer is:")
+
+if (response4 != answer4):
+    print("Sorry, that is incorrect!")
+else:
+    print("Well done! " + response4 + " is correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 5")
+
+#Question5
+print("""Which one of the following is the correct extension of the Python file?
+1. .python
+2. .py
+3. .p
+4. All The Above""")
+
+answer5 = "2"
+response5 = input("Your answer is:")
+
+if (response5 != answer5):
+    print("Sorry, that is incorrect!")
+else:
+    print("Well done! " + response5 + " is correct!")
+    score = score + 1
+
+print("Your total score is " + str(score) + " out of 5")
+print("Thank you for writing {}, goodbye!".format(name))
